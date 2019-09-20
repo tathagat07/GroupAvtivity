@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Claim claim = new Claim(1,"Health Insurance Claim", false,new BigDecimal(100000));
         Customer customer= new Customer("Ritesh",22);
-        customer.setClaimobj(claim);
+        customer.setClaimObj(claim);
 
         HealthInsuranceSurveyor healthInsuranceSurveyor = new HealthInsuranceSurveyor("Tathagat",23);
         ClaimManager claimManager= new ClaimManager(healthInsuranceSurveyor,"Rishav",24);
@@ -17,7 +17,7 @@ public class Main {
 
         Claim carClaim = new Claim(1,"Car Insurance Claim", false,new BigDecimal(10000));
         Customer customer2= new Customer("Prakhar",22);
-        customer2.setClaimobj(carClaim);
+        customer2.setClaimObj(carClaim);
 
         CarInsuranceSurveyor carInsuranceSurveyor = new CarInsuranceSurveyor("Roshan",23);
         ClaimManager claimManager2= new ClaimManager(carInsuranceSurveyor,"Rishav",24);

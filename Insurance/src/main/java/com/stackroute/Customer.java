@@ -1,13 +1,8 @@
 package com.stackroute;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
 public class Customer extends Person {
 
-    private Claim claimobj;
+    private Claim claimObj;
 
     Customer(String name,int age)
     {
@@ -15,12 +10,12 @@ public class Customer extends Person {
         System.out.println("Customer Created with name: "+this.name);
     }
 
-    public Claim getClaimobj() {
-        return claimobj;
+    public Claim getClaimObj() {
+        return claimObj;
     }
 
-    public void setClaimobj(Claim claimobj) {
-        this.claimobj = claimobj;
+    public void setClaimObj(Claim claimObj) {
+        this.claimObj = claimObj;
     }
 
 
